@@ -15,6 +15,6 @@ Run `python3 -m http.server 4173 --directory dist`, then open http://localhost:4
 
 ## Before public launch
 
-Add the studio's verified booking URL or business email to the enquiry flow. Currently it creates a copyable summary locally and does not transmit details. Project examples are explicitly labelled concepts. No client testimonials, project outcome metrics or team identities have been invented.
+The enquiry flow prepares an email addressed to contact@aligncraft.com.ng and offers a copyable summary. Sending happens in the visitor's email app. Project examples are explicitly labelled concepts. No client testimonials, project outcome metrics or team identities have been invented.
 
 The collaboration photograph is loaded from Unsplash. Inter is loaded from Google Fonts. All other artwork and interface elements are local.
