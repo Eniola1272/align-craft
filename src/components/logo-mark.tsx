@@ -1,0 +1,16 @@
+/** A forged pickaxe: a sweeping head, diagonal handle and lilac collar. */
+export function LogoMark() {
+  return (
+    <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+      <path
+        d="M26.5 15.5 32 20 15.2 42.1a3.5 3.5 0 0 1-5.5-4.3Z"
+        fill="#8B5CF6"
+      />
+      <path
+        d="M5 17.5C13.5 4 27.5 4.5 36.2 13.3c4.2 4.2 6.8 9.6 7.8 16.2-5.4-6.4-10.4-10.8-16.1-13.2C20.5 13.1 13.3 13.3 5 17.5Z"
+        fill="currentColor"
+      />
+      <path d="m25.6 15 6.3 4.8-3.3 4.3-6.3-4.8Z" fill="#C4B5FD" />
+    </svg>
+  );
+}
