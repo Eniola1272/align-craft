@@ -228,34 +228,6 @@
   background: rgba(255, 255, 255, 0.18) !important;
   border-color: rgba(255, 255, 255, 0.6) !important;
 }
-.studio-hero-bottom-bar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 55px;
-  padding-top: 25px;
-  border-top: 1px solid rgba(255, 255, 255, 0.12);
-}
-.studio-hero-tags {
-  display: flex;
-  gap: 32px;
-  font-size: 12px;
-  letter-spacing: 0.03em;
-  font-weight: 500;
-  color: rgba(255, 255, 255, 0.55);
-}
-.studio-hero-tags span {
-  transition: color 0.2s;
-}
-.studio-hero-tags span:hover {
-  color: rgba(255, 255, 255, 0.9);
-}
-.studio-hero-slogan {
-  font-size: 11px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.45);
-}
 .studio-overline {
   font-size: 10px;
   letter-spacing: 0.09em;
@@ -2214,17 +2186,6 @@
     min-height: 44px;
     padding-inline: 18px;
     font-size: 12px;
-  }
-  .studio-hero-bottom-bar {
-    margin-top: 35px;
-    padding-top: 18px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 14px;
-  }
-  .studio-hero-tags {
-    gap: 18px;
-    font-size: 11px;
   }
   .studio-section-label {
     margin-bottom: 25px;

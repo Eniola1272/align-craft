@@ -148,17 +148,6 @@ function Hero() {
             </div>
           </div>
         </div>
-
-        <div className="studio-hero-bottom-bar">
-          <div className="studio-hero-tags" aria-hidden="true">
-            <span>+ Define</span>
-            <span>+ Design</span>
-            <span>+ Development</span>
-          </div>
-          <div className="studio-hero-slogan">
-            <span>Clarity. Craft. Forward.</span>
-          </div>
-        </div>
       </div>
     </section>
   );
