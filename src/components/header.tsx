@@ -122,7 +122,21 @@ export function Header() {
           aria-controls={`nav-${name}`}
           onClick={() => setOpen(open === name ? null : name)}
         >
-          {name}
+          <span>{name}</span>
+          <svg
+            className="nav-chevron"
+            viewBox="0 0 10 6"
+            fill="none"
+            aria-hidden="true"
+          >
+            <path
+              d="m1.5 1.5 3.5 3 3.5-3"
+              stroke="currentColor"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
         </button>
         <div
           className={`dropdown ${open === name ? "open" : ""}`}
