@@ -233,7 +233,7 @@ export function SiteDialogs() {
         {project && (
           <>
             <span className="eyebrow">
-              Illustrative concept · {project.category}
+              Client Delivery · {project.category}
             </span>
             <h2 id="detail-title">
               {project.name}
@@ -241,24 +241,51 @@ export function SiteDialogs() {
             </h2>
             <ProjectArt index={selection!.index} />
             <p style={{ marginTop: 25 }}>
-              {project.description} This original concept demonstrates a
-              possible product direction rather than a commissioned client
-              project.
+              {project.description}
             </p>
-            <ul className="project-disciplines" aria-label="Concept scope">
+            {project.url && (
+              <p style={{ marginTop: -10, marginBottom: 20 }}>
+                <a
+                  href={project.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="studio-underlink"
+                  style={{ display: "inline-flex", alignItems: "center", gap: 6 }}
+                >
+                  Visit live application <span>↗</span>
+                </a>
+              </p>
+            )}
+            <ul className="project-disciplines" aria-label="Project deliverables">
               {project.deliverables.map((item) => (
                 <li key={item}>{item}</li>
               ))}
             </ul>
-            <h3>The design challenge</h3>
+            <h3>The challenge</h3>
             <p>{project.challenge}</p>
-            <h3>The design approach</h3>
+            <h3>Our approach &amp; engineering</h3>
             <p>{project.approach}</p>
-            <h3>Intended outcome</h3>
+            <h3>Delivered outcome</h3>
             <p>{project.outcome}</p>
-            <a className="btn primary" href="/pricing">
-              Explore a similar phase ↗
-            </a>
+            <div className="buttons" style={{ marginTop: 25 }}>
+              {project.url && (
+                <a
+                  className="btn primary"
+                  href={project.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Launch project ↗
+                </a>
+              )}
+              <button
+                className="btn"
+                data-contact
+                onClick={() => detail.current?.close()}
+              >
+                Discuss a similar project ↗
+              </button>
+            </div>
           </>
         )}
         {article && (

@@ -6,12 +6,12 @@ export function ProjectCard({ index }: { index: number }) {
   return (
     <article
       className={`studio-project studio-project-${index}`}
-      id={`project-${project.name.toLowerCase()}`}
+      id={`project-${project.name.toLowerCase().replace(/\s+/g, "-")}`}
     >
       <button
         className="studio-project-visual"
         data-project={index}
-        aria-label={`Explore ${project.name}, a ${project.industry.toLowerCase()} studio concept`}
+        aria-label={`Explore ${project.name}, delivered by Align Craft`}
       >
         <ProjectArt index={index} />
         <span className="project-open" aria-hidden="true">
@@ -25,10 +25,10 @@ export function ProjectCard({ index }: { index: number }) {
             <span aria-hidden="true">↗</span>
           </button>
         </h3>
-        <span>{project.industry} / Concept</span>
+        <span>{project.industry}</span>
       </div>
       <p>{project.description}</p>
-      <ul className="project-disciplines" aria-label="Concept scope">
+      <ul className="project-disciplines" aria-label="Project deliverables">
         {project.deliverables.map((item) => (
           <li key={item}>{item}</li>
         ))}

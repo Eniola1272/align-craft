@@ -76,77 +76,77 @@ function FormaStudy() {
   return (
     <div className="study-stage study-forma" aria-hidden="true">
       <div className="forma-window">
-        <WindowBar address="forma / workspace" />
+        <WindowBar address="portal.horacelearning.com / lms" />
         <div className="forma-layout">
           <aside className="forma-sidebar">
             <span className="forma-logo">
-              f<span>forma</span>
+              h<span>horace</span>
             </span>
             <span className="study-workspace">
-              Studio workspace <span>⌄</span>
+              Learning Portal <span>⌄</span>
             </span>
-            <div className="study-nav-item selected">▦ &nbsp; Overview</div>
+            <div className="study-nav-item selected">▦ &nbsp; Courses</div>
             <div className="study-nav-item">
-              □ &nbsp; Projects <small>06</small>
+              □ &nbsp; Curriculum <small>18</small>
             </div>
-            <div className="study-nav-item">◷ &nbsp; My tasks</div>
-            <div className="study-nav-item">↗ &nbsp; Shared files</div>
+            <div className="study-nav-item">◷ &nbsp; Assessments</div>
+            <div className="study-nav-item">↗ &nbsp; Resources</div>
             <div className="study-sidebar-bottom">
-              <span className="study-avatar">AC</span>
+              <span className="study-avatar">HL</span>
               <span>
-                Alex Carter<small>Personal workspace</small>
+                Horace Learning<small>Enterprise LMS</small>
               </span>
             </div>
           </aside>
           <div className="forma-main">
             <div className="study-topline">
               <span>
-                Workspace <span>/ Overview</span>
+                LMS <span>/ Student Dashboard</span>
               </span>
               <span>⌕ &nbsp; ◉</span>
             </div>
             <div className="forma-greeting">
               <div>
-                <span className="study-overline">MONDAY, OCTOBER 12</span>
+                <span className="study-overline">FALL SEMESTER • ACTIVE</span>
                 <h4>
-                  A little focus.
-                  <br />A lot of possibility.
+                  Accelerated learning.
+                  <br />Intuitive course delivery.
                 </h4>
               </div>
-              <span className="study-add">+ New project</span>
+              <span className="study-add">+ New Module</span>
             </div>
             <div className="forma-stats">
               <div>
-                <span>In progress</span>
+                <span>Enrolled Students</span>
                 <b>
-                  06<small>projects</small>
+                  1.4k<small>active</small>
                 </b>
                 <i className="stat-rule" />
               </div>
               <div>
-                <span>Ready for review</span>
+                <span>Avg Completion</span>
                 <b>
-                  03<small>deliverables</small>
+                  94%<small>rate</small>
                 </b>
                 <i className="stat-rule green" />
               </div>
               <div>
-                <span>This week</span>
+                <span>Courses Online</span>
                 <b>
-                  12<small>tasks completed</small>
+                  24<small>published</small>
                 </b>
                 <i className="stat-rule orange" />
               </div>
             </div>
             <div className="forma-projects">
               <div className="study-panel-heading">
-                <b>Your projects</b>
+                <b>Active Modules</b>
                 <span>View all ↗</span>
               </div>
               {[
-                ["Brand foundations", "Design", "68%"],
-                ["Website refresh", "Development", "42%"],
-                ["Product discovery", "Strategy", "85%"],
+                ["Product Strategy & UX", "Interactive Lab", "82%"],
+                ["Full-Stack Engineering", "Code Reviews", "65%"],
+                ["Digital Leadership", "Case Studies", "90%"],
               ].map(([name, phase, width], i) => (
                 <div className="forma-project-row" key={name}>
                   <span className={`study-project-icon icon-${i}`}>
@@ -160,16 +160,16 @@ function FormaStudy() {
                     <i style={{ width }} />
                   </span>
                   <span className="study-avatar avatar-soft">
-                    {["JL", "AC", "MT"][i]}
+                    {["HL", "ED", "ST"][i]}
                   </span>
                 </div>
               ))}
             </div>
             <div className="forma-bottom">
               <span>
-                <i /> Everything in its right place.
+                <i /> Live synchronisation enabled.
               </span>
-              <span>Built for the way you work.</span>
+              <span>Built with Next.js &amp; Material-UI.</span>
             </div>
           </div>
         </div>
@@ -182,41 +182,41 @@ function GatherStudy() {
     <div className="study-stage study-gather" aria-hidden="true">
       <div className="gather-page">
         <div className="gather-notice">
-          Thoughtful objects. Everyday rituals.
+          Verified Marketplace. Direct Buyer &amp; Seller Portals.
         </div>
         <div className="gather-nav">
           <b>
-            gather<span>®</span>
+            chrisema<span>™</span>
           </b>
-          <span>Shop &nbsp; Our story</span>
-          <span>Bag (0)</span>
+          <span>Catalogue &nbsp; Deals</span>
+          <span>Cart (0)</span>
         </div>
         <div className="gather-feature">
           <div>
-            <span className="study-overline">THE EVERYDAY COLLECTION</span>
+            <span className="study-overline">VERIFIED SECONDARY COMMERCE</span>
             <h4>
-              Make room
+              Smart trades.
               <br />
-              for the
+              Seamless
               <br />
-              <em>ordinary.</em>
+              <em>checkouts.</em>
             </h4>
-            <span className="gather-shop">Discover the collection ↗</span>
+            <span className="gather-shop">Explore Marketplace ↗</span>
           </div>
           <div className="gather-feature-object">
             <ProductObject />
-            <span>No. 01 — The everyday vase</span>
+            <span>Verified Listing — Premium Audio</span>
           </div>
         </div>
         <div className="gather-products">
-          {["The low bowl", "The quiet candle"].map((name, i) => (
+          {["Electronics Hub", "Verified Luxury"].map((name, i) => (
             <div key={name}>
               <div className={`gather-product-image product-image-${i}`}>
                 <ProductObject kind={i + 1} />
               </div>
               <span>
                 {name}
-                <small>Explore ↗</small>
+                <small>View ↗</small>
               </span>
             </div>
           ))}
@@ -230,59 +230,59 @@ function MonoStudy() {
     <div className="study-stage study-mono" aria-hidden="true">
       <div className="mono-caption">
         <span className="study-overline">
-          MONEY, WITH A LITTLE MORE CLARITY.
+          DIRECT LUXURY HOSPITALITY.
         </span>
         <h4>
-          Less friction.
+          Zero OTA fees.
           <br />
-          <em>More living.</em>
+          <em>Total control.</em>
         </h4>
         <span className="mono-brand">
-          mono<span>↗</span>
+          cc stays<span>↗</span>
         </span>
       </div>
       <div className="mono-device">
         <div className="device-island" />
         <div className="mono-device-top">
-          <span className="study-avatar">A</span>
+          <span className="study-avatar">CC</span>
           <span>
-            Good morning, Alex<small>Your day. Your way.</small>
+            Miami Luxury Retreats<small>Direct Booking Engine</small>
           </span>
           <span>◉</span>
         </div>
         <div className="mono-balance">
-          <span>Available balance</span>
+          <span>Synced with Guesty PMS</span>
           <b>
-            ₦240,000<span>.00</span>
+            Live Rates<span>/night</span>
           </b>
-          <small>Account details ↗</small>
+          <small>Dynamic Availability ↗</small>
         </div>
         <div className="mono-actions">
           <span>
-            <i>↗</i>Send
+            <i>📅</i>Dates
           </span>
           <span>
-            <i>+</i>Add money
+            <i>👥</i>Guests
           </span>
           <span>
-            <i>▦</i>More
+            <i>✓</i>Book
           </span>
         </div>
         <div className="mono-savings">
           <span>◒</span>
           <div>
-            A little for later.<small>Your next adventure starts here.</small>
+            Direct Guest Benefits<small>Best rate guarantee. No service markup.</small>
           </div>
           <b>↗</b>
         </div>
         <div className="mono-transactions">
           <b>
-            Recent activity <span>See all</span>
+            Verified Stays <span>Properties</span>
           </b>
           {[
-            ["↗", "Coffee & co.", "Today, 09:41", "−₦4,500"],
-            ["↓", "Money received", "Yesterday", "+₦50,000"],
-            ["↗", "Internet plan", "Yesterday", "−₦12,000"],
+            ["★", "Biscayne Bay Villa", "Instant Booking", "Active"],
+            ["★", "Blue Ridge Chalet", "Dynamic Pricing", "Active"],
+            ["★", "South Beach Suite", "Two-Way Sync", "Active"],
           ].map(([symbol, name, date, value]) => (
             <div key={name}>
               <i>{symbol}</i>
@@ -296,13 +296,13 @@ function MonoStudy() {
         </div>
         <div className="mono-tabs">
           <span>
-            ◉<small>Home</small>
+            ◉<small>Villas</small>
           </span>
           <span>
-            ⇄<small>Payments</small>
+            ⇄<small>Calendar</small>
           </span>
           <span>
-            ◒<small>Savings</small>
+            ◒<small>Check-in</small>
           </span>
         </div>
       </div>
@@ -313,37 +313,37 @@ function FieldworkStudy() {
   return (
     <div className="study-stage study-fieldwork" aria-hidden="true">
       <div className="fieldwork-window">
-        <WindowBar address="fieldwork / operations" />
+        <WindowBar address="silosuites.com / direct-booking" />
         <div className="fieldwork-nav">
           <b>
-            <span>↗</span> fieldwork
+            <span>★</span> silosuites
           </b>
-          <span>Overview &nbsp; Jobs &nbsp; Team</span>
-          <span className="study-avatar">KM</span>
+          <span>Suites &nbsp; Rates &nbsp; Calendar</span>
+          <span className="study-avatar">SS</span>
         </div>
         <div className="fieldwork-main">
           <div className="fieldwork-heading">
             <div>
-              <span className="study-overline">YOUR OPERATION, CONNECTED.</span>
-              <h4>A clear view of the day.</h4>
+              <span className="study-overline">AUTOMATED REVENUE &amp; RESERVATION ENGINE</span>
+              <h4>Bespoke booking ecosystem.</h4>
             </div>
-            <span className="fieldwork-add">+ Schedule job</span>
+            <span className="fieldwork-add">Stripe Verified ✓</span>
           </div>
           <div className="fieldwork-board">
             <div className="fieldwork-jobs">
               <b>
-                Today’s schedule <span>3 jobs</span>
+                Payment Architecture <span>Flexible Split</span>
               </b>
               {[
-                ["09:00", "Site assessment", "In progress"],
-                ["11:30", "Installation review", "Scheduled"],
-                ["14:00", "Customer handover", "Scheduled"],
+                ["Deposit", "60/40 Split Rule", "Configurable"],
+                ["Stripe API", "Card & SEPA Direct", "Processed"],
+                ["Security", "Pre-Auth Hold", "Zero Premature Capture"],
               ].map(([time, title, status], i) => (
                 <div key={title} className={i === 0 ? "active" : ""}>
                   <small>{time}</small>
                   <h5>{title}</h5>
                   <span>{status}</span>
-                  <span className="job-team">{["AO", "KM", "JL"][i]} ↗</span>
+                  <span className="job-team">{["🔒", "⚡", "✓"][i]} ↗</span>
                 </div>
               ))}
             </div>
@@ -371,7 +371,7 @@ function FieldworkStudy() {
                 <circle cx="220" cy="155" r="3" fill="white" />
               </svg>
               <span className="map-label">
-                Team locations <i>Live view</i>
+                Two-way iCal Sync <i>Zero Double-Bookings</i>
               </span>
             </div>
           </div>
@@ -386,22 +386,22 @@ function PetalStudy() {
       <div className="petal-page">
         <div className="petal-nav">
           <b>
-            petal<span>✳</span>
+            boaj<span>care</span>
           </b>
-          <span>Plants &nbsp; Plant care &nbsp; Our story</span>
-          <span>Bag (0)</span>
+          <span>Services &nbsp; Care Team &nbsp; Inquiries</span>
+          <span style={{ fontSize: 9 }}>USA Verified</span>
         </div>
         <div className="petal-intro">
-          <span className="study-overline">A LITTLE ROOM TO GROW.</span>
+          <span className="study-overline">EMPATHETIC PATIENT-FIRST DESIGN</span>
           <h4>
-            Bring the
+            Compassionate care.
             <br />
-            <em>outside in.</em>
+            <em>Clear pathways.</em>
           </h4>
-          <span>Good plants. Happier spaces. ↗</span>
+          <span>Accessible health navigation ↗</span>
         </div>
         <div className="plant-grid">
-          {["The easygoing one", "The sun seeker", "The statement piece"].map(
+          {["Skilled Nursing", "Home Health Support", "Family Consultation"].map(
             (name, i) => (
               <div className="plant-card" key={name}>
                 <div className={`plant-illustration plant-${i}`}>
@@ -414,7 +414,7 @@ function PetalStudy() {
                 </div>
                 <span>
                   {name}
-                  <small>Meet your plant ↗</small>
+                  <small>Care details ↗</small>
                 </span>
               </div>
             ),
@@ -430,42 +430,42 @@ function FormlyStudy() {
       <div className="formly-window">
         <div className="formly-top">
           <b>
-            formly<span>✳</span>
+            course<span>masters</span>
           </b>
           <span>
-            Customer feedback <i>Draft</i>
+            Curriculum Builder <i>Published</i>
           </span>
-          <span className="formly-publish">Publish ↗</span>
+          <span className="formly-publish">Preview Course ↗</span>
         </div>
         <div className="formly-layout">
           <aside>
-            <span className="study-overline">YOUR QUESTIONS</span>
-            <span className="selected">01 &nbsp; Welcome screen</span>
-            <span>02 &nbsp; Overall experience</span>
-            <span>03 &nbsp; A little more detail</span>
-            <span>04 &nbsp; Thank you</span>
-            <span className="formly-add">+ Add a question</span>
+            <span className="study-overline">COURSE ROADMAP</span>
+            <span className="selected">01 &nbsp; Foundational Design</span>
+            <span>02 &nbsp; Responsive Architecture</span>
+            <span>03 &nbsp; Production Deployment</span>
+            <span>04 &nbsp; Certification</span>
+            <span className="formly-add">+ Add Module</span>
           </aside>
           <div className="formly-canvas">
             <div className="formly-paper">
-              <span className="study-overline">LET’S MAKE THINGS BETTER.</span>
+              <span className="study-overline">DESIGN-TO-CODE ACCELERATION</span>
               <h4>
-                Your experience.
+                From Figma systems.
                 <br />
-                In your words.
+                To live Next.js platforms.
               </h4>
               <p>
-                A few good questions can make
-                <br />a world of difference.
+                Reusable Tailwind components and
+                <br />performant codebases.
               </p>
-              <span className="formly-start">Let’s begin →</span>
-              <small>Takes about 2 minutes.</small>
+              <span className="formly-start">Start Learning →</span>
+              <small>93%+ Core Web Vitals.</small>
             </div>
           </div>
         </div>
         <div className="formly-bottom">
-          <span>Design &nbsp; Logic &nbsp; Settings</span>
-          <span>All changes saved ✓</span>
+          <span>Modular Code &nbsp; Responsive UI &nbsp; API Synced</span>
+          <span>Fast &amp; Accessible ✓</span>
         </div>
       </div>
     </div>
@@ -480,6 +480,28 @@ const studies = [
   FormlyStudy,
 ];
 export function ProjectArt({ index }: { index: number }) {
+  if (index === 1) {
+    return (
+      <div className="study-stage study-image-stage" aria-hidden="true">
+        <img
+          src="/assets/images/chrisema-showcase.jpg"
+          alt="Chrisema E-Commerce Platform"
+          className="study-showcase-img"
+        />
+      </div>
+    );
+  }
+  if (index === 2) {
+    return (
+      <div className="study-stage study-image-stage" aria-hidden="true">
+        <img
+          src="/assets/images/ccstays-showcase.jpg"
+          alt="CC Stays Luxury Direct Booking Portal"
+          className="study-showcase-img"
+        />
+      </div>
+    );
+  }
   const Study = studies[index];
   return Study ? <Study /> : null;
 }

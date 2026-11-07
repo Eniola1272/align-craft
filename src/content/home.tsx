@@ -160,17 +160,17 @@ function SelectedWork() {
       aria-labelledby="work-heading"
     >
       <div className="wrap">
-        <SectionLabel>Selected explorations</SectionLabel>
+        <SectionLabel>Selected client work</SectionLabel>
         <div className="studio-section-heading">
           <h2 id="work-heading">
-            The decisions
+            Proven engineering.
             <br />
-            <em>behind the design.</em>
+            <em>Delivered for business.</em>
           </h2>
           <p>
-            Explore the user problem, the interface and the reasoning behind
-            each concept. These are original studio studies, not commissioned
-            client projects or measured results.
+            Explore real-world platforms, high-conversion booking engines, and
+            SaaS products we’ve architected, designed, and deployed for our
+            clients.
           </p>
         </div>
         <div className="studio-project-grid">
@@ -180,7 +180,7 @@ function SelectedWork() {
         </div>
         <details className="more-studies">
           <summary>
-            Explore two more concepts <span>Petal &amp; Formly</span>
+            Explore more projects <span>BOAJ Healthcare &amp; The Course Masters</span>
           </summary>
           <div className="studio-project-grid">
             {[4, 5].map((index) => (

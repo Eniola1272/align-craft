@@ -13,10 +13,10 @@ const groups: Record<string, NavItem[]> = {
     { label: "Connected systems & automation", href: "/#service-4" },
   ],
   Work: [
-    { label: "All explorations", href: "/#work" },
+    { label: "Selected client work", href: "/#work" },
     ...projects.slice(0, 4).map((p) => ({
       label: p.name,
-      href: `/#project-${p.name.toLowerCase()}`,
+      href: `/#project-${p.name.toLowerCase().replace(/\s+/g, "-")}`,
     })),
     { label: "Our approach", href: "/#process" },
   ],

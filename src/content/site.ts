@@ -16,6 +16,8 @@ export type Project = {
   name: string;
   category: string;
   industry: string;
+  image?: string;
+  url?: string;
   deliverables: string[];
   description: string;
   challenge: string;
@@ -24,87 +26,95 @@ export type Project = {
 };
 export const projects: Project[] = [
   {
-    name: "Forma",
-    category: "SaaS · Product design",
-    industry: "Work & productivity",
-    deliverables: ["Product strategy", "UI/UX design", "Design system"],
+    name: "Horace LMS",
+    category: "EdTech · Web Platform",
+    industry: "Education & Learning",
+    url: "https://lms.horacelearning.com/",
+    deliverables: ["Next.js Architecture", "MUI & TailwindCSS", "API Integration", "Role-Based Dashboards"],
     description:
-      "A workspace concept that gives small teams a shared view of projects and progress, with the next action close at hand.",
+      "A high-performance learning management ecosystem and interactive portal engineered for seamless course delivery, student tracking, and educator workflows.",
     challenge:
-      "Project updates spread across separate tools make it hard to see what needs attention. This concept brings the essentials into one workspace.",
+      "Legacy education tools struggled with sluggish navigation, complex content distribution, and poor mobile accessibility for thousands of concurrent learners.",
     approach:
-      "A compact navigation system leads into a project overview. Consistent status labels and progress indicators help people move between the big picture and individual tasks.",
+      "Architected a Next.js and Material-UI frontend with optimized client-side state caching, streamlined navigation for educator portals, and accessible responsive interfaces.",
     outcome:
-      "Help a small team understand where work stands and decide what to do next.",
+      "Significantly accelerated content load times and reduced operational friction for students, instructors, and administrators.",
   },
   {
-    name: "Gather",
-    category: "Commerce · Web design",
-    industry: "Home & lifestyle",
-    deliverables: ["Creative direction", "E-commerce UX", "Website design"],
+    name: "Chrisema",
+    category: "E-Commerce · Multi-Vendor",
+    industry: "Marketplace & Retail",
+    image: "/assets/images/chrisema-showcase.jpg",
+    url: "https://chrisemart.com/",
+    deliverables: ["Full-Stack Next.js", "TypeScript & Tailwind", "ShadCN UI", "Seller/Buyer Dashboards"],
     description:
-      "A homeware storefront concept that gives products room to tell their story while keeping the collection easy to browse.",
+      "A modern, verified marketplace platform tailored for buying and selling goods with dedicated, role-specific buyer and merchant portals.",
     challenge:
-      "A small collection needs a distinctive presentation and a straightforward shopping experience. The product story and the route to purchase have to work together.",
+      "Facilitating secure transactions, dynamic inventory management, and dual-portal interfaces without cluttering user flows or slowing search performance.",
     approach:
-      "Generous product framing sets the tone. Restrained navigation and a simple collection structure keep attention on the objects and the next step into the catalogue.",
+      "Engineered reusable modular component architectures using ShadCN UI and TypeScript, paired with real-time API integrations for listings, order flows, and status tracking.",
     outcome:
-      "Help customers understand the collection and find a product that interests them.",
+      "Delivered an intuitive, frictionless marketplace experience that empowered sellers to manage storefronts independently and buyers to check out smoothly.",
   },
   {
-    name: "Mono",
-    category: "Fintech · Mobile design",
-    industry: "Personal finance",
-    deliverables: ["Mobile UX", "Interface design", "Interactive prototype"],
+    name: "CC Stays",
+    category: "Hospitality · Direct Booking",
+    industry: "Vacation Rentals & Travel",
+    image: "/assets/images/ccstays-showcase.jpg",
+    url: "https://ccstays.com/",
+    deliverables: ["Headless WordPress & React", "Guesty PMS API", "Custom Booking Engine", "Dynamic Pricing"],
     description:
-      "A mobile wallet concept that puts balances, payments and recent activity within easy reach, so everyday money tasks are easier to follow.",
+      "A luxury direct-booking hospitality portal integrated with Guesty PMS API, liberating property managers from high third-party OTA fees.",
     challenge:
-      "A wallet needs to make the important information clear without crowding a small screen. People should be able to distinguish account status from actions they can take.",
+      "Third-party booking platforms incurred steep commission fees while offering rigid branding, slow availability synchronization, and fragmented guest communication.",
     approach:
-      "The balance has a clear place in the hierarchy. Direct payment actions and readable activity rows give the core journeys a consistent structure. All account data shown is illustrative.",
+      "Built a bespoke direct-booking engine combining custom PHP/WordPress backend logic with dynamic React components, multi-calendar synchronization, and automated rate calculations.",
     outcome:
-      "Make it easier to understand the account and choose the next payment action.",
+      "Eliminated intermediary booking commission fees while boosting direct revenue and providing real-time multi-channel availability.",
   },
   {
-    name: "Fieldwork",
-    category: "Operations · Platform design",
-    industry: "Field services",
-    deliverables: ["Workflow mapping", "Dashboard UX", "Interface design"],
+    name: "Silosuites",
+    category: "Hospitality · Booking Engine",
+    industry: "Luxury Accommodations",
+    url: "https://silosuites.com/",
+    deliverables: ["Custom Booking Plugin", "Stripe & SEPA Integration", "iCal Bi-Directional Sync", "Split Payments"],
     description:
-      "An operations concept that puts schedules and team locations in the same workspace, giving field and office teams a shared view of the day.",
+      "A bespoke direct-booking ecosystem for premium vacation rentals featuring automated Stripe payment handling and dynamic split-deposit structures.",
     challenge:
-      "Coordinating jobs becomes difficult when the schedule and field updates live in different places. Teams need a common view of what is happening.",
+      "Standard booking plugins lacked flexible deposit percentages (e.g., 60/40), automated security deposit pre-authorizations, and reliable two-way calendar sync.",
     approach:
-      "The schedule sits beside a map, with explicit status labels and a clear hierarchy for time-sensitive jobs. The locations and schedules are sample data.",
+      "Developed a custom WordPress plugin managing deposit schedules, Stripe card/SEPA transactions, pre-authorization holds without early capture, and bi-directional iCal feeds.",
     outcome:
-      "Help teams connect a job’s status with its place in the day’s schedule.",
+      "Provided property owners with full autonomy over payment rules and completely prevented double-bookings across external OTAs.",
   },
   {
-    name: "Petal",
-    category: "Lifestyle · E-commerce",
-    industry: "Plants & interiors",
-    deliverables: ["Art direction", "Shopping experience", "Responsive design"],
+    name: "BOAJ Healthcare",
+    category: "HealthTech · Patient Platform",
+    industry: "Healthcare & Home Care",
+    url: "https://www.boajcare.com/",
+    deliverables: ["Next.js & TypeScript", "ShadCN UI & Tailwind", "HIPAA-Conscious UI", "Frictionless Inquiries"],
     description:
-      "A plant-shop concept that pairs approachable product names with care cues, helping first-time owners find a place to start.",
+      "A trusted, accessible web platform for a US-based healthcare provider, designed for empathetic patient navigation and streamlined care inquiries.",
     challenge:
-      "A first-time plant owner may not know what to choose. The shopping experience needs to introduce the collection without assuming specialist knowledge.",
+      "Patients and families seeking critical healthcare services often encountered intimidating, confusing service directories and cumbersome consultation request forms.",
     approach:
-      "Plain-language product names and an inviting collection layout make the range approachable. Care cues give people useful context as they browse.",
+      "Structured a clear, comforting information hierarchy using accessible UI tokens, mobile-first layouts, and straightforward consultation pathways.",
     outcome:
-      "Help someone identify a plant they want to learn more about and understand the care involved.",
+      "Increased patient consultation requests and reduced support inquiry drop-offs through an approachable, accessible digital experience.",
   },
   {
-    name: "Formly",
-    category: "No-code · Product design",
-    industry: "Research & feedback",
-    deliverables: ["Product UX", "Builder interface", "Design system"],
+    name: "The Course Masters",
+    category: "EdTech · E-Learning",
+    industry: "Professional Education",
+    url: "https://thecoursemasters-frontend.vercel.app/",
+    deliverables: ["UI/UX to Production Code", "Next.js & TailwindCSS", "Scalable Component Library", "API Integration"],
     description:
-      "A form-builder concept that keeps the question outline and respondent’s view together, making editing decisions easier to judge.",
+      "An educational platform translating tailored Figma design systems into performant, reusable code with interactive course dashboards.",
     challenge:
-      "Form builders can separate the editing controls from the experience people will receive. This concept keeps both in view.",
+      "Bridging custom high-fidelity Figma prototypes into clean, modular code without losing micro-interactions or responsiveness across desktop and mobile devices.",
     approach:
-      "A question outline provides structure, the editing canvas shows the result, and a clear publishing action marks the next step. Each area has a distinct job.",
+      "Authored a clean, scalable component system using Next.js and TailwindCSS, delegating API logic efficiently and maintaining high lighthouse accessibility scores.",
     outcome:
-      "Help people understand how their questions fit together before publishing.",
+      "Achieved seamless design-to-code fidelity, reducing subsequent feature development cycles and delighting course creators.",
   },
 ];

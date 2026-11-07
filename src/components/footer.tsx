@@ -15,7 +15,7 @@ const groups = [
     title: "The studio",
     links: [
       { label: "About Align Craft", href: "/about" },
-      { label: "Selected explorations", href: "/#work" },
+      { label: "Selected client work", href: "/#work" },
       { label: "How we work", href: "/#process" },
       { label: "Start a project", href: "/#contact" },
     ],
