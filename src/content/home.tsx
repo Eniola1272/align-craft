@@ -92,15 +92,14 @@ const questions = [
   ],
 ];
 function SectionLabel({
-  number,
   children,
 }: {
-  number: string;
+  number?: string;
   children: React.ReactNode;
 }) {
   return (
     <div className="studio-section-label">
-      <span>{number} /</span> {children}
+      {children}
     </div>
   );
 }
@@ -172,7 +171,7 @@ function SelectedWork() {
       aria-labelledby="work-heading"
     >
       <div className="wrap">
-        <SectionLabel number="01">Selected explorations</SectionLabel>
+        <SectionLabel>Selected explorations</SectionLabel>
         <div className="studio-section-heading">
           <h2 id="work-heading">
             The decisions
@@ -260,7 +259,7 @@ function Services() {
     >
       <div className="wrap studio-services-layout">
         <div className="studio-services-intro">
-          <SectionLabel number="02">What we do</SectionLabel>
+          <SectionLabel>What we do</SectionLabel>
           <h2 id="services-heading">
             What your
             <br />
@@ -312,7 +311,7 @@ function Difference() {
       aria-labelledby="difference-heading"
     >
       <div className="wrap">
-        <SectionLabel number="03">Why work with Align Craft</SectionLabel>
+        <SectionLabel>Why work with Align Craft</SectionLabel>
         <div className="studio-difference-grid">
           <div>
             <h2 id="difference-heading">
@@ -383,7 +382,7 @@ function Process() {
       aria-labelledby="process-heading"
     >
       <div className="wrap">
-        <SectionLabel number="04">From question to launch</SectionLabel>
+        <SectionLabel>From question to launch</SectionLabel>
         <div className="studio-section-heading">
           <h2 id="process-heading">
             Know what’s next.
@@ -418,7 +417,7 @@ function FrequentlyAskedQuestions() {
     >
       <div className="wrap studio-faq-layout">
         <div>
-          <SectionLabel number="05">Before we begin</SectionLabel>
+          <SectionLabel>Before we begin</SectionLabel>
           <h2 id="faq-heading">
             Before you
             <br />
@@ -454,7 +453,7 @@ function Insights() {
       aria-labelledby="journal-heading"
     >
       <div className="wrap">
-        <SectionLabel number="06">Notes from the studio</SectionLabel>
+        <SectionLabel>Notes from the studio</SectionLabel>
         <div className="studio-section-heading">
           <h2 id="journal-heading">
             Make the call
