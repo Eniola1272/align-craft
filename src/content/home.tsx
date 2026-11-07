@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { RotatingAudience } from "@/components/rotating-audience";
 import { ProjectCard } from "@/components/project-card";
-import { ProjectArt } from "@/content/project-art";
 import { contactEmail } from "@/content/site";
 import { notes } from "@/content/journal";
 
@@ -108,70 +107,58 @@ function SectionLabel({
 function Hero() {
   return (
     <section className="studio-hero" aria-labelledby="hero-heading">
-      <div className="wrap">
-        <div className="studio-hero-kicker">
-          <span>Design &amp; software development</span>
-          <span>Clarity. Craft. Forward.</span>
+      <div className="studio-hero-bg" aria-hidden="true">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/assets/images/ui-ux-design-monitor.jpg"
+          alt=""
+          width={1920}
+          height={1080}
+        />
+      </div>
+      <div className="studio-hero-overlay" aria-hidden="true" />
+      <div className="wrap studio-hero-content">
+        <div className="studio-hero-top-badge">
+          <span className="hero-badge-dot" aria-hidden="true" />
+          <span>Next-Gen Design &amp; Software Studio</span>
         </div>
-        <div className="studio-hero-grid">
-          <h1 id="hero-heading">
-            Beautifully
-            <br />
-            built.
-            <RotatingAudience />
-          </h1>
-          <div className="studio-hero-intro">
-            <span className="hero-intro-line" aria-hidden="true" />
-            <p>
+
+        <div className="studio-hero-main-row">
+          <div className="studio-hero-headline-col">
+            <h1 id="hero-heading">
+              Beautifully
+              <br />
+              built.
+              <RotatingAudience />
+            </h1>
+          </div>
+
+          <div className="studio-hero-aside-col">
+            <p className="studio-hero-lead">
               We design and build websites, web platforms and mobile apps for
               founders and businesses. You get a considered interface, a clear
               delivery plan and software your team can take forward.
             </p>
-            <div className="buttons">
-              <button className="btn primary" data-contact>
+            <div className="studio-hero-actions">
+              <button className="btn primary hero-btn-solid" data-contact>
                 Start a project <span aria-hidden="true">↗</span>
               </button>
-              <a className="studio-underlink" href="#work">
-                Explore our work <span aria-hidden="true">↓</span>
+              <a className="btn hero-btn-outline" href="#work">
+                Explore our work <span aria-hidden="true">↗</span>
               </a>
             </div>
-            <span className="studio-hero-note">
-              Tell us what the product needs to do. We’ll work through the rest.
-            </span>
           </div>
         </div>
-        <div className="hero-study">
-          <div className="hero-study-copy">
-            <span className="studio-overline">Product design concept</span>
-            <h2>
-              See the work.
-              <br />
-              <em>Find the next step.</em>
-            </h2>
-            <p>
-              Forma puts projects, tasks and progress in one view, so a small
-              team can see what needs attention.
-            </p>
-            <button className="studio-underlink" data-project="0">
-              Explore the design <span aria-hidden="true">↗</span>
-            </button>
-            <span className="hero-study-index">
-              01 / Product interface concept
-            </span>
+
+        <div className="studio-hero-bottom-bar">
+          <div className="studio-hero-tags" aria-hidden="true">
+            <span>+ Define</span>
+            <span>+ Design</span>
+            <span>+ Development</span>
           </div>
-          <div
-            className="hero-study-visual"
-            role="img"
-            aria-label="Forma concept workspace, showing a project overview, progress and shared tasks. All data is illustrative."
-          >
-            <ProjectArt index={0} />
+          <div className="studio-hero-slogan">
+            <span>Clarity. Craft. Forward.</span>
           </div>
-        </div>
-        <div className="studio-hero-caption">
-          <span>Design decisions that hold up in the build.</span>
-          <a href="#work">
-            Selected explorations <span aria-hidden="true">↓</span>
-          </a>
         </div>
       </div>
     </section>

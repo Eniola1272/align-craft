@@ -34,6 +34,7 @@ const groups: Record<string, NavItem[]> = {
 export function Header() {
   const [open, setOpen] = useState<string | null>(null);
   const [mobile, setMobile] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const header = useRef<HTMLElement>(null);
   const menuButton = useRef<HTMLButtonElement>(null);
   const pathname = usePathname();
@@ -95,6 +96,13 @@ export function Header() {
     desktop.addEventListener("change", resize);
     return () => desktop.removeEventListener("change", resize);
   }, []);
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   function group(name: string) {
     return (
       <div className="navgroup" key={name}>
@@ -134,9 +142,10 @@ export function Header() {
       </div>
     );
   }
+  const isHome = pathname === "/";
   return (
     <header
-      className="header"
+      className={`header ${isHome && !scrolled ? "hero-header" : ""}`}
       ref={header}
       onBlur={(event) => {
         if (!event.currentTarget.contains(event.relatedTarget as Node | null))
