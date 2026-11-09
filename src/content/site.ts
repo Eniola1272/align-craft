@@ -29,6 +29,7 @@ export const projects: Project[] = [
     name: "Horace LMS",
     category: "EdTech · Web Platform",
     industry: "Education & Learning",
+    image: "/assets/images/horace-showcase.png",
     url: "https://lms.horacelearning.com/",
     deliverables: ["Next.js Architecture", "MUI & TailwindCSS", "API Integration", "Role-Based Dashboards"],
     description:
@@ -76,6 +77,7 @@ export const projects: Project[] = [
     name: "Silosuites",
     category: "Hospitality · Booking Engine",
     industry: "Luxury Accommodations",
+    image: "/assets/images/silosuites-showcase.jpg",
     url: "https://silosuites.com/",
     deliverables: ["Custom Booking Plugin", "Stripe & SEPA Integration", "iCal Bi-Directional Sync", "Split Payments"],
     description:
@@ -91,6 +93,7 @@ export const projects: Project[] = [
     name: "BOAJ Healthcare",
     category: "HealthTech · Patient Platform",
     industry: "Healthcare & Home Care",
+    image: "/assets/images/boajcare-showcase.jpg",
     url: "https://www.boajcare.com/",
     deliverables: ["Next.js & TypeScript", "ShadCN UI & Tailwind", "HIPAA-Conscious UI", "Frictionless Inquiries"],
     description:
@@ -106,6 +109,7 @@ export const projects: Project[] = [
     name: "The Course Masters",
     category: "EdTech · E-Learning",
     industry: "Professional Education",
+    image: "/assets/images/the-course-masters-showcase.jpg",
     url: "https://thecoursemasters-frontend.vercel.app/",
     deliverables: ["UI/UX to Production Code", "Next.js & TailwindCSS", "Scalable Component Library", "API Integration"],
     description:

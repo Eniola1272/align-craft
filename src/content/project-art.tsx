@@ -480,6 +480,17 @@ const studies = [
   FormlyStudy,
 ];
 export function ProjectArt({ index }: { index: number }) {
+  if (index === 0) {
+    return (
+      <div className="study-stage study-image-stage" aria-hidden="true">
+        <img
+          src="/assets/images/horace-showcase.png"
+          alt="Horace Learning Management System"
+          className="study-showcase-img"
+        />
+      </div>
+    );
+  }
   if (index === 1) {
     return (
       <div className="study-stage study-image-stage" aria-hidden="true">
@@ -497,6 +508,39 @@ export function ProjectArt({ index }: { index: number }) {
         <img
           src="/assets/images/ccstays-showcase.jpg"
           alt="CC Stays Luxury Direct Booking Portal"
+          className="study-showcase-img"
+        />
+      </div>
+    );
+  }
+  if (index === 3) {
+    return (
+      <div className="study-stage study-image-stage" aria-hidden="true">
+        <img
+          src="/assets/images/silosuites-showcase.jpg"
+          alt="Silo Suites Direct Booking Architecture"
+          className="study-showcase-img"
+        />
+      </div>
+    );
+  }
+  if (index === 4) {
+    return (
+      <div className="study-stage study-image-stage" aria-hidden="true">
+        <img
+          src="/assets/images/boajcare-showcase.jpg"
+          alt="BOAJ Healthcare Patient Platform"
+          className="study-showcase-img"
+        />
+      </div>
+    );
+  }
+  if (index === 5) {
+    return (
+      <div className="study-stage study-image-stage" aria-hidden="true">
+        <img
+          src="/assets/images/the-course-masters-showcase.jpg"
+          alt="The Course Masters E-Learning Platform"
           className="study-showcase-img"
         />
       </div>
