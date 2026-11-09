@@ -37,6 +37,14 @@ const offerings = [
     service: "AI Solutions & WhatsApp Agents",
     shape: "systems",
   },
+  {
+    title: "Digital marketing & content strategy",
+    description:
+      "Turn traffic into active customers. We craft data-backed multi-channel campaigns, social media management, and cohesive content strategies that drive reach, engagement, and sustainable revenue.",
+    deliverables: "Social media management · Content strategy · Growth campaigns",
+    service: "Digital Marketing & Growth",
+    shape: "marketing",
+  },
 ];
 const phases = [
   {
@@ -228,12 +236,19 @@ function ServiceGraphic({ kind }: { kind: string }) {
         <>
           <path d="m32 23-18 15 18 15m32-30 18 15-18 15M55 14 41 62" />
         </>
-      ) : (
+      ) : kind === "systems" ? (
         <>
           <rect x="8" y="28" width="22" height="22" rx="3" />
           <rect x="66" y="8" width="22" height="22" rx="3" />
           <rect x="66" y="48" width="22" height="22" rx="3" />
           <path d="M30 39h18V19h18M48 39v20h18" />
+        </>
+      ) : (
+        <>
+          {/* Growth / Marketing radar / megaphone graphic */}
+          <path d="M16 48V28l36-12v44L16 48ZM52 28l20-8v36l-20-8M16 38H10a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h6M52 48l12 16h8L60 48" />
+          <circle cx="80" cy="38" r="4" fill="currentColor" fillOpacity=".2" />
+          <circle cx="88" cy="38" r="2" fill="currentColor" />
         </>
       )}
     </svg>

@@ -194,6 +194,26 @@ function DeliveryPhases() {
             development.
           </p>
         </details>
+        <details className="phase">
+          <summary>
+            <div>
+              <h3>Digital Marketing, Social Media &amp; Content Strategy</h3>
+              <small>
+                Audience acquisition, social channels, and high-converting content
+                narratives to scale your product.
+              </small>
+              <small className="quote-label">
+                Ongoing monthly or defined campaign phase
+              </small>
+            </div>
+            <em>4–12 week phase</em>
+          </summary>
+          <p>
+            We identify your highest-value channels, craft editorial content
+            calendars, and execute social campaigns and technical SEO to turn
+            passive visitors into engaged, paying customers.
+          </p>
+        </details>
       </div>
     </section>
   );

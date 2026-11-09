@@ -1,11 +1,14 @@
 export const contactEmail = "contact@aligncraft.com.ng";
 export const services: string[] = [
-  "Mobile App Development",
-  "SaaS & Web App Development",
-  "AI Solutions & WhatsApp Agents",
-  "Backend & API Development",
   "Website Development",
   "UI/UX & Product Design",
+  "SaaS & Web App Development",
+  "Mobile App Development",
+  "Digital Marketing & Growth",
+  "Social Media Management",
+  "Content Strategy & Copywriting",
+  "AI Solutions & WhatsApp Agents",
+  "Backend & API Development",
   "DevOps & Cloud Infrastructure",
   "Cybersecurity",
   "Technical Compliance Support",

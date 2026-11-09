@@ -11,6 +11,7 @@ const groups: Record<string, NavItem[]> = {
     { label: "Digital product design", href: "/#service-2" },
     { label: "Software development", href: "/#service-3" },
     { label: "Connected systems & automation", href: "/#service-4" },
+    { label: "Digital marketing & content strategy", href: "/#service-5" },
   ],
   Work: [
     { label: "Selected client work", href: "/#work" },

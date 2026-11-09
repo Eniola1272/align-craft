@@ -9,6 +9,7 @@ const groups = [
       { label: "Digital product design", href: "/#service-2" },
       { label: "Software development", href: "/#service-3" },
       { label: "Systems & automation", href: "/#service-4" },
+      { label: "Marketing & content strategy", href: "/#service-5" },
     ],
   },
   {
