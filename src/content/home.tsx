@@ -292,13 +292,24 @@ function Services() {
                 <h3>{o.title}</h3>
                 <p>{o.description}</p>
                 <span className="service-deliverables">{o.deliverables}</span>
-                <button
-                  className="studio-underlink"
-                  data-contact
-                  data-service={o.service}
-                >
-                  Discuss this work <span aria-hidden="true">↗</span>
-                </button>
+                <div style={{ display: "flex", gap: 20, alignItems: "center", flexWrap: "wrap" }}>
+                  <button
+                    className="studio-underlink"
+                    data-contact
+                    data-service={o.service}
+                  >
+                    Discuss this work <span aria-hidden="true">↗</span>
+                  </button>
+                  {o.service === "Digital Marketing & Growth" && (
+                    <Link
+                      className="studio-underlink"
+                      href="/marketing"
+                      style={{ color: "var(--studio-purple)" }}
+                    >
+                      View growth show cases <span aria-hidden="true">→</span>
+                    </Link>
+                  )}
+                </div>
               </div>
               <ServiceGraphic kind={o.shape} />
             </article>
